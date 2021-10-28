@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(170, 169, 169);
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+}
+
+.heading img {
+    background: transparent;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.heading h1 {
+    color: rgb(185, 183, 183);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-family: 'Playfair Display', serif;
+
+}
+
+#movie-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.7em;
+    
+}
+
+.movies a {
+    padding: 12px;
+}
+
+
+.movies img {
+    border-radius: 20px;
+    border: 3px solid rgb(255, 255, 255);
+    max-width: 175px;
+    max-height: 175px;
+}
+
+.movies:hover {
+    border-radius: 20px;
+    background-color: rgba(245, 246, 247, 0.603);
+    
+}
+
+/* .prev {
+    display: inline-block;
+} */
+
+.pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.prev a {
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+    background-color: rgb(138, 138, 138);
+    padding: 8px 16px;
+}
+
+/* .next {
+    display: inline-block;
+} */
+
+.next a {
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    background-color: rgb(48, 72, 146);
+    padding: 8px 16px;
+}
+
+.prev a:hover {
+    background-color: rgb(224, 224, 224);
+    color: black;
+}
+
+.next a:hover {
+    background-color: rgb(71, 109, 221);
+}
+
+@media (max-width: 1125px) {
+  #movie-list {
+      justify-content: space-between;
+      flex-direction: row;
+  }
+}
+
+@media (max-width: 700px) {
+    #movie-list {
+        flex-wrap: wrap;
+    }
+
+    .movies img {
+        margin-top: 10px;
+    }
+
+    .heading h1 {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 585px) {
+    .heading img {
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 425px) {
+    .heading img {
+        max-height: 275px;
+        max-width: 275px;
+    }
+}
