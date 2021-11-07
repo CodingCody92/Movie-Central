@@ -60,7 +60,7 @@ body {
 
 .pages {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -71,6 +71,7 @@ body {
     text-decoration: none;
     background-color: rgb(138, 138, 138);
     padding: 8px 16px;
+    margin: 12px;
 }
 
 /* .next {
@@ -125,5 +126,12 @@ body {
     .heading img {
         max-height: 275px;
         max-width: 275px;
+    }
+}
+
+@media (max-width: 4380px) {
+    .heading img {
+        max-height: 100px;
+        max-width: 100px;
     }
 }
